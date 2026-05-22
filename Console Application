@@ -1,0 +1,82 @@
+using System;
+
+// Namespace groups related classes together
+namespace ConsoleMathApp
+{
+    // Main class of the application
+    class Program
+    {
+        // Main method is the entry point of the program
+        static void Main(string[] args)
+        {
+            // Ask the user to enter a number to multiply by 50
+            Console.WriteLine("Enter a number to multiply by 50:");
+
+            // Store the user input as a long data type
+            // Long is used so the program can handle very large numbers
+            long number1 = Convert.ToInt64(Console.ReadLine());
+
+            // Multiply the number by 50
+            long result1 = number1 * 50;
+
+            // Print the result to the console
+            Console.WriteLine("Result: " + result1);
+
+
+            // Ask the user to enter a number to add 25
+            Console.WriteLine("Enter a number to add 25:");
+
+            // Store the input
+            int number2 = Convert.ToInt32(Console.ReadLine());
+
+            // Add 25 to the number
+            int result2 = number2 + 25;
+
+            // Print the result
+            Console.WriteLine("Result: " + result2);
+
+
+            // Ask the user to enter a number to divide by 12.5
+            Console.WriteLine("Enter a number to divide by 12.5:");
+
+            // Store the input as a double
+            double number3 = Convert.ToDouble(Console.ReadLine());
+
+            // Divide the number by 12.5
+            double result3 = number3 / 12.5;
+
+            // Print the result
+            Console.WriteLine("Result: " + result3);
+
+
+            // Ask the user to enter a number to check if it is greater than 50
+            Console.WriteLine("Enter a number to check if it is greater than 50:");
+
+            // Store the input
+            int number4 = Convert.ToInt32(Console.ReadLine());
+
+            // Check if the number is greater than 50
+            bool isGreater = number4 > 50;
+
+            // Print true or false result
+            Console.WriteLine(isGreater);
+
+
+            // Ask the user to enter a number to divide by 7
+            Console.WriteLine("Enter a number to divide by 7:");
+
+            // Store the input
+            int number5 = Convert.ToInt32(Console.ReadLine());
+
+            // Find the remainder using modulus operator
+            int remainder = number5 % 7;
+
+            // Print the remainder
+            Console.WriteLine("The remainder is: " + remainder);
+
+
+            // Prevent the console window from closing immediately
+            Console.ReadLine();
+        }
+    }
+}
